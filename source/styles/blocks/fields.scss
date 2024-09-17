@@ -1,0 +1,15 @@
+.fields {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.fields__email {
+  line-height: 30px;
+  color: $main-text;
+}
+
+.fields__button {
+  line-height: 26px;
+  color: $basic-bg-second;
+}

@@ -1,7 +1,30 @@
+@import "./../vendor/normalize.css";
+
 /* GLOBAL */
 @import "./common/variables.scss";
-@import "./common/global.scss";
+@import "./common/mixins.scss";
 @import "./common/fonts.scss";
+@import "./common/global.scss";
 
 /* BLOCKS */
 @import "./blocks/header.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/button-burger.scss";
+@import "./blocks/visually-hidden.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/program.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/work.scss";
+@import "./blocks/live.scss";
+@import "./blocks/contacts.scss";
+@import "./blocks/main-catalog.scss";
+@import "./blocks/button.scss";
+@import "./blocks/addition-catalog.scss";
+@import "./blocks/addition-product.scss";
+@import "./blocks/promotions.scss";
+@import "./blocks/section-title.scss";
+@import "./blocks/section-title-mini.scss";
+@import "./blocks/fields.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/item-card.scss";
+@import "./blocks/index-card.scss";
