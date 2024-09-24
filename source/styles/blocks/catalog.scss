@@ -20,3 +20,21 @@
   line-height: 30px;
   text-transform: uppercase;
 }
+
+.catalog__item--slim {
+  background-image: url("../../icons/stack.svg#cat1");
+  background-size: 100px 106px;
+  background-repeat: no-repeat;
+}
+
+.catalog__item--heavy {
+  background-image: url("../../icons/stack.svg#cat2");
+  background-size: 134px 100px;
+  background-repeat: no-repeat;
+}
+
+.catalog__link--arrow {
+  background-image: url("../../icons/stack.svg#icon_arrow");
+  background-size: 24px 12px;
+  background-repeat: no-repeat;
+}

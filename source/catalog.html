@@ -29,8 +29,16 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo logo" href="/">
-      <img class="main-header__logo-image main-header__logo-image--icon" src="#" width="202" height="58" alt="Кэт энерджи">
-      <img class="main-header__logo-image main-header__logo-image--text" src="#" width="202" height="58" alt="Cat energy">
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
+        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+        <img class="main-header__logo-image main-header__logo-image--icon" src="images/logo-mobile.svg" alt="Логотип сайта" width="33" height="38">
+      </picture>
+      <picture>
+        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" width="118" height="21">
+        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-text-desktop.svg" width="101" height="18">
+        <img class="main-header__logo-image main-header__logo-image--text" src="images/logo-text-desktop.svg" alt="Адрес на карте" width="101" height="18">
+      </picture>
     </a>
 
     <nav class="main-nav">
@@ -215,7 +223,7 @@
         </li>
 
         <li class="main-catalog__foot">
-          <h3 class="main-catalog__title">Показать еще 100500 товаров</h3>
+          <h3 class="main-catalog__title main-catalog__title--plus">Показать еще 100500 товаров</h3>
           <p class="main-catalog__subscription">На самом деле вкусов гораздо больше!</p>
           <a class="main-catalog__show-button button button--grey" href="#">Показать все</a>
         </li>
@@ -259,8 +267,8 @@
           </div>
         </div>
 
-        <div class="addition-catalog__promo">
-          <p class="addition-catalog__promo-text">Закажите все и получите чехол для кота в подарок!</p>
+        <div class="addition-catalog__promo addition-catalog__promo--bg">
+          <p class="addition-catalog__promo-text addition-catalog__promo-text--gift">Закажите все и получите чехол для кота в подарок!</p>
         </div>
       </div>
     </section>
@@ -299,7 +307,7 @@
   <footer class="page-footer">
     <a class="page-footer__logo logo" href="/">
       <h3 class="visually-hidden">Cat Energy</h3>
-      <img class="logo__text" src="#" alt="Cat Energy" width="128" height="24">
+      <img class="logo__text" src="images/logo-text-desktop.svg" alt="Cat Energy" width="128" height="24">
     </a>
 
     <section class="page-footer_social social">
@@ -309,19 +317,16 @@
         <li class="social__item">
           <a class="social__link social__link--icon-vk" href="#">
             <h3 class="visually-hidden">Мы Вконтакте</h3>
-            <img class="social__logo" src="#" alt="Мы Вконтакте" width="128" height="24">
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--icon-inst" href="#">
-            <h3 class="visually-hidden">Мы в Инстаграме</h3>
-            <img class="social__logo" src="#" alt="Мы в Инстаграме" width="128" height="24">
+          <a class="social__link social__link--icon-youtube" href="#">
+            <h3 class="visually-hidden">Мы в Ютубе></h3>
           </a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--icon-fb" href="#">
-            <h3 class="visually-hidden">Мы в Фейсбуке</h3>
-            <img class="social__logo" src="#" alt="Мы в Фейсбуке" width="128" height="24">
+          <a class="social__link social__link--icon-telegram" href="#">
+            <h3 class="visually-hidden">Мы в Телеграм</h3>
           </a>
         </li>
       </ul>
@@ -330,7 +335,7 @@
 
     <a class="page-footer__author author author--htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
       <h3 class="page-footer__author-text">HTML Academy</h3>
-      <img class="page-footer__author-icon" src="#" alt="Иконка" width="128" height="24">
+      <img class="page-footer__author-icon" src="images/html-academy.svg" alt="Иконка" width="27" height="34">
     </a>
 
   </footer>

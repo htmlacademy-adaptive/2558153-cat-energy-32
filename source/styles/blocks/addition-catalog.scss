@@ -4,3 +4,14 @@
   text-align: center;
   color: $basic-bg-text;
 }
+
+.addition-catalog__promo--bg {
+  background-image: url("../../images/bg-gift-desktop@1x.png");
+  background-repeat: no-repeat;
+}
+
+.addition-catalog__promo-text--gift {
+  background-image: url("../../icons/stack.svg#icon_gift");
+  background-size: 80px 83px;
+  background-repeat: no-repeat;
+}
