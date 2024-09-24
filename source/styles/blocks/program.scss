@@ -1,22 +1,105 @@
 .program {
   font-family: "Oswald", sans-serif;
-  color: #000000;
-  background-image: url("../../images/bg-main-desktop@1x.png");
+  color: #ffffff;
+  background-image: url("../../images/bg-main-mobile@1x.png");
   background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: 720px 694px;
+  background-position: center top;
+  background-size: 100% 302px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 23px;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    padding-top: 52px;
+    padding-bottom: 533px;
+    background-image: url("../../images/promo-tablet@1x.png");
+    background-position: 30px 251px;
+    background-size: 709px 609px;
+  }
+
+  @media (min-width: 1300px) {
+    background-image: url("../../images/promo-desktop@1x.png");
+    background-position: center 25px;
+    background-size: 552px auto;
+    padding-top: 20px;
+    padding-bottom: 200px;
+    background-color: transparent;
+  }
+}
+
+.program__wrapper {
+  @media (min-width: 768px) {
+    padding-left: 90px;
+    padding-right: 30px;
+  }
+
+  @media (min-width: 1300px) {
+    width: 1300px;
+    margin: 0 auto;
+    padding: 79px 40px 0 83px;
+  }
+}
+
+.program__title {
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0 0 26px;
+  padding: 28px 15px 23px;
+
+  @media (min-width: 768px) {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 60px;
+    width: 420px;
+    margin-bottom: 40px;
+    color: #111111;
+    text-align: left;
+    padding: 0;
+  }
 }
 
 .program__description {
   text-transform: uppercase;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 43px;
+    color: #111111;
+    text-align: left;
+  }
+}
+
+.program__image {
+  display: block;
+  margin: 0 auto;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 }
 
 .program__button {
   text-transform: uppercase;
-  font-size: 20px;
-  line-height: 26px;
   align-content: center;
   color: $basic-bg-text;
+
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-top: 3px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 246px;
+  }
 }
