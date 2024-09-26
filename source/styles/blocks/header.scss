@@ -6,21 +6,3 @@ header {
     border: 0;
   }
 }
-
-.page__body.page__body--index {
-  @media (min-width: 1300px) {
-    border: 0;
-
-    &::before {
-      content: "";
-      position: absolute;
-      inset: 0 0 0 50%;
-      z-index: -1;
-      //background-color: #65a93c;
-      background-image: url("../../images/bg-main-desktop@1x.jpg");
-      background-position: 0 0;
-      background-repeat: no-repeat;
-      background-size: 100% 700px;
-    }
-  }
-}

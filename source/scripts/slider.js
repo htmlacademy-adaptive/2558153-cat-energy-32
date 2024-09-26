@@ -1,16 +1,25 @@
-(function () {
-  const slider = document.querySelector('.live__slider');
+const slider = document.querySelector('.slider');
+const curtain = slider.querySelector('.slider__curtain');
+const sliderStyles = getComputedStyle(slider);
+let curtainPlaceStart;
+let clientX;
 
-  const before = slider.querySelector('.live__slide--before');
-  const after = slider.querySelector('.live__slide--after');
-  const input = slider.querySelector('.live__range');
-  const container = document.querySelector('.live__progress-bar');
+window.addEventListener('pointerup', stopTheCurtainShifting);
+curtain.addEventListener('pointerdown', startTheCurtainShifting);
 
-  input.addEventListener('input', (e) => {
-    after.style.width = `${100 - input.value }%`;
-    before.style.width = `${input.value }%`;
-    container.style.setProperty('--position', `${e.target.value}%`);
-  });
+function startTheCurtainShifting (event) {
+  curtainPlaceStart = +(sliderStyles.getPropertyValue('--position'));
+  clientX = event.clientX;
+  window.addEventListener('pointermove', shiftТheСurtain);
+}
 
+function shiftТheСurtain (event) {
+  const deltaX = event.clientX - clientX;
+  const cursorPlace = curtainPlaceStart + deltaX / slider.clientWidth;
+  const curtainPlace = Math.min(Math.max(cursorPlace, 0), 1);
+  slider.style.setProperty('--position', `${curtainPlace}`);
+}
 
-})();
+function stopTheCurtainShifting () {
+  window.removeEventListener('pointermove', shiftТheСurtain);
+}

@@ -23,8 +23,7 @@
   <meta name="msapplication-TileColor" content="#ffffff">
   <meta name="msapplication-TileImage" content="favicons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
-  <script src="scripts/index.js" defer></script>
-  <script src="scripts/slider.js" defer></script>
+
 </head>
 
 <body class="page__body page__body--index">
@@ -33,14 +32,14 @@
       <a class="main-header__logo logo" href="/">
         <picture>
           <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg" width="70" height="59">
-          <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="174" height="50">
-          <img class="main-header__logo-image main-header__logo-image--icon" src="images/logo-mobile.svg" alt="Логотип сайта" width="191" height="38">
+          <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-tablet.svg" width="60" height="50">
+          <img class="main-header__logo-image main-header__logo-image--icon" src="images/logo-mobile.svg" alt="Логотип сайта" width="50" height="38">
         </picture>
-      <picture>
-        <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" width="118" height="21">
-        <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-text-desktop.svg" width="101" height="18">
-        <img class="main-header__logo-image main-header__logo-image--text" src="images/logo-text-desktop.svg" alt="Адрес на карте" width="101" height="18">
-      </picture>
+        <picture>
+          <source type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-text-desktop.svg" width="118" height="21">
+          <source type="image/svg+xml" media="(min-width:768px)" srcset="images/logo-text-desktop.svg" width="101" height="18">
+          <img class="main-header__logo-image main-header__logo-image--text" src="images/logo-text-desktop.svg" alt="Адрес на карте" width="101" height="18">
+        </picture>
       </a>
 
       <button class="main-header__menu-toggle main-header__menu-toggle--opened" type="button">
@@ -94,12 +93,16 @@
         <li class="catalog__item catalog__item--slim">
           <h3 class="catalog__title">похудение</h3>
           <p class="catalog__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-          <a class="catalog__link catalog__link--arrow" href="#">Каталог slim</a>
+          <a class="catalog__link catalog__link--arrow" href="#">
+            Каталог slim
+          </a>
         </li>
         <li class="catalog__item catalog__item--heavy">
           <h3 class="catalog__title">набор массы</h3>
           <p class="catalog__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-          <a class="catalog__link catalog__link--arrow" href="#">Каталог pro</a>
+          <a class="catalog__link catalog__link--arrow" href="#">
+            Каталог pro
+          </a>
         </li>
       </ul>
     </section>
@@ -142,26 +145,25 @@
           </p>
         </div>
 
-        <div class="live__slider">
-          <div class="live__slider-wrapper">
-            <div class="live__slide live__slide--before"></div>
-            <div class="live__slide live__slide--after"></div>
-            <div class="live__slider-control">
-              <div class="live__progress-bar">
-                <label class="visually-hidden" for="l-style">123</label>
-                <input class="live__range" id="l-style" name="live_range" type="range" min="17" max="80" value="50">
-                <div class="live__range-line" aria-hidden="true"></div>
-                <div class="live__range-button" aria-hidden="true">
-                  <svg class="live__range-button-svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="1" y="1" width="38" height="38" rx="19" fill="#fff" />
-                    <path d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z" fill="#666" />
-                    <rect x="1" y="1" width="38" height="38" rx="19" stroke="#666" stroke-width="2" />
-                  </svg>
-                </div>
-              </div>
-            </div>
+        <div class="live__slider slider" style="--position: 0.5;">
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-2-desktop@1x.png 1x, images/cat-2-desktop@2x.png 2x" width="560" height="512">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/cat-2-tablet@1x.png 1x, images/cat-2-tablet@2x.png 2x" width="709" height="609">
+            <img class="slider__image slider__image--before" src="images/cat-2-mobile@1x.png" srcset="images/cat-2-mobile@2x.png 2x" alt="Кот до похудения" width="280" height="270">
+          </picture>
+          <div class="slider__curtain">
+            <button class="slider__thumb" type="button">
+              <span class="visually-hidden">Ползунок слайдера</span>
+            </button>
           </div>
+          <picture>
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/cat-1-desktop@1x.png 1x, images/cat-1-desktop@2x.png 2x" width="560" height="512">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/cat-1-tablet@1x.png 1x, images/cat-1-tablet@2x.png 2x" width="709" height="609">
+            <img class="slider__image slider__image--after" src="images/cat-1-mobile@1x.png" srcset="cat-1/cat-1-mobile@2x.png 2x" alt="Кот после похудения" width="280" height="270">
+          </picture>
         </div>
+
+        <div class="live__inner"></div>
 
       </div>
     </section>
@@ -177,11 +179,7 @@
       </div>
 
       <div class="contacts__map">
-        <picture>
-          <source type="image/png" media="(min-width: 1440px)" srcset="images/map-desktop@1x.png 1x, images/map-desktop@2x.png 2x" width="1440" height="400">
-          <source type="image/png" media="(min-width:768px)" srcset="images/map-tablet@1x.png 1x, images/map-tablet@2x.png 2x" width="1440" height="400">
-          <img class="contacts__map-image" src="images/map-mobile@1x.png" srcset="images/map-mobile@2x.png 2x" alt="Адрес на карте" width="0" height="362">
-        </picture>
+        <iframe src="https://yandex.ru/map-widget/v1/?lang=ru_RU&amp;scroll=true&amp;source=constructor-api&amp;um=constructor%3Add6ffef72fb5ed065911f1ead11bc8f5dfeb5a05c51dd9860e1d99a885428d6f" style="display: block;"></iframe>
       </div>
     </section>
 
@@ -223,6 +221,8 @@
     </div>
   </footer>
 
+  <script src="scripts/index.js" defer></script>
+  <script src="scripts/slider.js" defer></script>
 </body>
 
 </html>
