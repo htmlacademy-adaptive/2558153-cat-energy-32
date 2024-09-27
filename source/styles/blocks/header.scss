@@ -1,5 +1,8 @@
-.header {
-  background-color: #663399;
-  color: #ffffff;
-  padding: 10px 15px;
+header {
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: 768px) {
+    border: 0;
+  }
 }

@@ -1,0 +1,185 @@
+.work {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 28px;
+
+  @media (min-width: 768px) {
+    padding: 32px 30px 0;
+  }
+
+  @media (min-width: 1300px) {
+    width: 1300px;
+    margin: 0 auto;
+    padding-left: 93px;
+    padding-right: 0;
+    padding-bottom: 181px;
+  }
+}
+
+.work__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 68px;
+  }
+
+  @media (min-width: 1300px) {
+    padding: 0;
+  }
+}
+
+.work__title {
+  font-family: "Oswald", sans-serif;
+  margin: -12px 0 28px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px;
+  color: $main-text;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    margin-bottom: 70px;
+  }
+
+  @media (min-width: 1300px) {
+    padding-top: 16px;
+  }
+}
+
+.work__item {
+  font-size: 14px;
+  line-height: 18px;
+
+  position: relative;
+  min-height: 60px;
+  padding-top: 0;
+  padding-left: 80px;
+  margin: 0 0 20px;
+
+  @media (min-width: 768px) {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 40%;
+    max-width: 300px;
+    padding-bottom: 50px;
+    margin-bottom: 120px;
+    background-repeat: no-repeat;
+    padding-left: 0;
+  }
+
+  @media (min-width: 768px) {
+    padding-bottom: 0;
+    max-width: 325px;
+  }
+}
+
+.work__item p {
+  padding-top: 3px;
+
+  @media (min-width: 768px) {
+    width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 93px;
+  }
+}
+
+.work__item-1::before {
+  @media (min-width: 768px) {
+    content: "1";
+    z-index: -1;
+    opacity: 0.1;
+    font-family: "Oswald", sans-serif;
+    font-size: 285px;
+    position: absolute;
+    top: 90px;
+    left: 117px;
+  }
+}
+
+.work__item-2::before {
+  @media (min-width: 768px) {
+    content: "2";
+    z-index: -1;
+    opacity: 0.1;
+    font-family: "Oswald", sans-serif;
+    font-size: 285px;
+    position: absolute;
+    top: 90px;
+    left: 112px;
+  }
+}
+
+.work__item-3::before {
+  @media (min-width: 768px) {
+    content: "3";
+    z-index: -1;
+    opacity: 0.1;
+    font-family: "Oswald", sans-serif;
+    font-size: 285px;
+    position: absolute;
+    top: 90px;
+    left: 113px;
+  }
+}
+
+.work__item-4::before {
+  @media (min-width: 768px) {
+    content: "4";
+    z-index: -1;
+    opacity: 0.1;
+    font-family: "Oswald", sans-serif;
+    font-size: 285px;
+    position: absolute;
+    top: 90px;
+    left: 113px;
+  }
+}
+
+
+.work__item--icon-leaf {
+  background-image: url("../../icons/stack.svg#group1");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-size: 80px 80px;
+  }
+}
+
+.work__item--icon-water {
+  background-image: url("../../icons/stack.svg#group2");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-size: 80px 80px;
+  }
+}
+
+.work__item--icon-eat {
+  background-image: url("../../icons/stack.svg#group3");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-size: 80px 80px;
+  }
+}
+
+.work__item--icon-clock {
+  background-image: url("../../icons/stack.svg#group4");
+  background-size: 60px 60px;
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    background-size: 80px 80px;
+  }
+}

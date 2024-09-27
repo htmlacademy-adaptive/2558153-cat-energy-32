@@ -1,0 +1,49 @@
+.fields {
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    width: 94%;
+    align-items: center;
+    display: flex;
+    margin: 15px auto 0;
+  }
+
+  @media (min-width: 1300px) {
+    width: 752px;
+    margin: 17px auto 0;
+  }
+}
+
+.fields__email {
+  color: $main-text;
+  width: 97%;
+  height: 52px;
+  line-height: 30px;
+  margin-top: 7px;
+
+  @media (min-width: 768px) {
+    width: 140%;
+  }
+
+  @media (min-width: 1300px) {
+    width: 196%;
+    margin-left: 7px;
+  }
+}
+
+.fields__button {
+  width: 100%;
+  height: 56px;
+  margin-top: 16px;
+  line-height: 26px;
+  font-size: 20px;
+  color: $basic-bg-second;
+
+  @media (min-width: 768px) {
+    height: 56px;
+    min-width: 256px;
+    margin-top: 5px;
+  }
+}

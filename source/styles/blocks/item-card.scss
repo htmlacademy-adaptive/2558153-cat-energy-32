@@ -1,0 +1,124 @@
+.item-card {
+  position: relative;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ededed;
+
+  @media (min-width: 768px) {
+    width: 324px;
+    min-height: 431px;
+    margin-bottom: 140px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    background-color: #f2f2f2;
+    border: 0;
+  }
+
+  @media (min-width: 1300px) {
+    margin-bottom: 142px;
+    padding-bottom: 0;
+    width: 245px;
+    //margin-left: 20px;
+    margin-right: 52px;
+  }
+}
+
+.item-card__wrapper {
+  display: flex;
+  flex-grow: 1;
+
+  @media (min-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.item-card__img-wrapper {
+  position: relative;
+  height: 143px;
+}
+
+.item-card__image {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 15px;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    left: 50%;
+    bottom: 9px;
+    width: auto;
+    height: auto;
+    transform: translateX(-50%);
+  }
+
+  @media (min-width: 1300px) {
+    bottom: 7px;
+  }
+}
+
+.item-card__content {
+  padding-top: 21px;
+  flex-grow: 1;
+
+  @media (min-width: 768px) {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  @media (min-width: 1300px) {
+    padding-top: 10px;
+  }
+}
+
+.item-card__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+  display: block;
+  width: 80px;
+  margin: 0 0 14px;
+
+  @media (min-width: 768px) {
+    margin: 0 auto 18px;
+    font-size: 20px;
+    width: 75%;
+    text-align: center;
+  }
+
+  @media (min-width: 1300px) {
+    margin-bottom: 24px;
+  }
+}
+
+.item-card__button-wrapper {
+  width: 100%;
+  font-size: 16px;
+
+  @media (min-width: 768px) {
+    padding-left: 38px;
+    padding-right: 38px;
+    width: auto;
+  }
+}
+
+.item-card__button {
+  font-family: "Oswald", sans-serif;
+  line-height: 40px;
+  display: block;
+  width: 100%;
+  height: 40px;
+  padding: 0;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #68b738;
+  border: 0;
+  cursor: pointer;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}

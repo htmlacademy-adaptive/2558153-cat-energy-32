@@ -1,0 +1,124 @@
+.main-header__wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  min-height: 65px;
+
+  @media (min-width: 768px) {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 0;
+  }
+
+  @media (min-width: 1300px) {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    min-height: 142px;
+    padding-top: 5px;
+    align-items: center;
+  }
+}
+
+.main-header__menu-toggle {
+  padding: 15px 0 0;
+  margin: 0 3px 0 0;
+  display: block;
+  width: 18px;
+  height: 18px;
+  border: 0;
+  background-color: transparent;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.main-header__logo {
+  &:active {
+    opacity: 0.6;
+  }
+
+  @media (max-width: 767px) {
+    width: 80%;
+  }
+
+  @media (min-width: 1300px) {
+    padding-top: 20px;
+    padding-left: 68px;
+  }
+}
+
+.main-header__logo-image {
+  @media (max-width: 767px) {
+    padding-top: 10px;
+  }
+
+  @media (min-width: 768px) {
+    width: 100px;
+    height: 59px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 1300px) {
+    width: 128px;
+    height: 60px;
+    margin-top: 0;
+  }
+}
+
+.main-header__logo-image--icon {
+  @media (max-width: 767px) {
+    padding-top: 10px;
+  }
+
+  @media (min-width: 768px) {
+    width: 65px;
+  }
+}
+
+.main-header__logo-image--text {
+  @media (max-width: 767px) {
+    padding-bottom: 10px;
+    margin-left: 20%;
+  }
+
+  @media (min-width: 1300px) {
+    padding-left: 4px;
+  }
+}
+
+.main-header__menu-toggle--opened {
+  width: 24px;
+  height: 24px;
+  margin-top: 20px;
+}
+
+.main-header__menu-toggle--closed::before,
+.main-header__menu-toggle--opened::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url("../../icons/stack.svg#cross");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.main-header__menu-toggle--closed::before {
+  width: 24px;
+  height: 24px;
+}
+
+.main-header__menu-toggle--opened::before {
+  width: 24px;
+  height: 24px;
+  margin-left: 3px;
+  background-image: url("../../icons/stack.svg#burger");
+}
