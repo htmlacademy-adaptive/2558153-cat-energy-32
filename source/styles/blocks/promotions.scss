@@ -1,5 +1,5 @@
 .promotions {
-  padding: 29px 20px 35px;
+  padding: 0 20px 35px;
 
   @media (min-width: 768px) {
     padding-bottom: 80px;
@@ -9,6 +9,7 @@
     padding-left: 40px;
     padding-right: 40px;
     overflow-x: hidden;
+    padding-bottom: 103px;
   }
 }
 
@@ -19,7 +20,7 @@
     padding-left: 0;
     padding-right: 0;
     margin: 0 auto;
-    max-width: 1400px;
+    max-width: 1300px;
   }
 }
 
@@ -29,19 +30,20 @@
   width: 90%;
   height: 3px;
   position: absolute;
-  top: 15px;
-  right: 0;
+  top: 11px;
+  right: -20px;
   background-color: #68b738;
 
   @media (min-width: 768px) {
-    width: 110%;
-    top: 20px;
-    right: 0;
+    width: 112%;
+    top: 13px;
+    right: -40px;
   }
 
   @media (min-width: 1300px) {
     width: 180%;
     right: -40%;
+    top: 16px;
   }
 }
 
@@ -56,15 +58,22 @@
   width: auto;
   padding-right: 23px;
   margin-top: 0;
-  margin-bottom: 33px;
+  margin-bottom: 17px;
   background-color: #ffffff;
 
   @media (min-width: 768px) {
-    margin-bottom: 79px;
-    padding-left: 36px;
+    margin-bottom: 66px;
+    padding-left: 31px;
     padding-right: 36px;
-    font-size: 36px;
-    line-height: 36px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: 1300px) {
+    font-size: 40px;
+    line-height: 40px;
+    padding-left: 48px;
+    margin-bottom: 70px;
   }
 }
 
@@ -80,5 +89,13 @@
     line-height: 32px;
     width: 540px;
     margin: 0 auto;
+  }
+
+  @media (min-width: 1300px) {
+    width: 700px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 32px;
+    padding-left: 17px;
   }
 }

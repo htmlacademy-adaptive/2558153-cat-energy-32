@@ -4,7 +4,11 @@
   padding-right: 20px;
 
   @media (min-width: 768px) {
-    padding: 58px 30px 47px;
+    padding: 48px 30px 47px;
+  }
+
+  @media (min-width: 1300px) {
+    padding-top: 34px;
   }
 }
 
@@ -15,8 +19,9 @@
   }
 
   @media (min-width: 1300px) {
-    max-width: 1400px;
+    max-width: 1300px;
     margin: 0 auto;
+    padding-top: 22px;
   }
 }
 
@@ -31,16 +36,16 @@
 .page-footer__item--logo {
   text-align: center;
   padding-top: 40px;
-  padding-bottom: 27px;
+  padding-bottom: 18px;
 
   @media (min-width: 768px) {
     justify-content: flex-start;
-    width: 22%;
+    width: 18%;
     padding: 0;
   }
 
-  @media (min-width: 768px) {
-    width: 10%;
+  @media (min-width: 1300px) {
+    width: 17%;
   }
 }
 
@@ -68,7 +73,7 @@
 
   @media (min-width: 768px) {
     border: 0;
-    width: 55%;
+    width: 60%;
   }
 
   @media (min-width: 1300px) {
@@ -78,17 +83,18 @@
 
 .page-footer__item--author {
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  padding-top: 22px;
+  padding-top: 12px;
   padding-bottom: 28px;
 
   @media (min-width: 768px) {
     border: 0;
     padding: 0;
-    width: 150px;
+    width: 156px;
   }
 
   @media (min-width: 1300px) {
-    padding-left: 0;
+    padding-left: 26px;
+    width: 164px;
   }
 }
 

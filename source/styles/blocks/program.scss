@@ -13,17 +13,17 @@
 
   @media (min-width: 768px) {
     padding-top: 52px;
-    padding-bottom: 533px;
+    padding-bottom: 500px;
     background-image: url("../../images/promo-tablet@1x.png");
-    background-position: 30px 251px;
+    background-position: 30px 258px;
     background-size: 709px 609px;
   }
 
   @media (min-width: 1300px) {
     background-image: url("../../images/promo-desktop@1x.png");
-    background-position: center 25px;
+    background-position: 64% -4px;
     background-size: 552px auto;
-    padding-top: 20px;
+    padding-top: 0;
     padding-bottom: 200px;
     background-color: transparent;
   }
@@ -31,22 +31,23 @@
 
 .program__wrapper {
   @media (min-width: 768px) {
-    padding-left: 90px;
+    padding-left: 100px;
     padding-right: 30px;
+    padding-top: 5px;
   }
 
   @media (min-width: 1300px) {
-    width: 1300px;
+    width: 1210px;
     margin: 0 auto;
-    padding: 79px 40px 0 83px;
+    padding: 79px 0 0 170px;
   }
 }
 
 .program__title {
   font-size: 36px;
   line-height: 36px;
-  margin: 0 0 26px;
-  padding: 28px 15px 23px;
+  margin: 0 0 24px;
+  padding: 28px 15px 0;
 
   @media (min-width: 768px) {
     font-weight: 400;
@@ -63,18 +64,19 @@
 .program__description {
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 14px;
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 43px;
+    margin-bottom: 50px;
     color: #111111;
     text-align: left;
   }
 }
 
 .program__image {
+  padding-top: 15px;
   display: block;
   margin: 0 auto;
 
@@ -88,18 +90,18 @@
   align-content: center;
   color: $basic-bg-text;
 
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   width: 100%;
-  padding-top: 11px;
-  padding-bottom: 11px;
+  padding-top: 0;
+  padding-bottom: 0;
   margin-top: 3px;
 
   @media (min-width: 768px) {
+    width: 246px;
+    padding-top: 8px;
+    padding-bottom: 7px;
     font-size: 20px;
     line-height: 20px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    width: 246px;
   }
 }

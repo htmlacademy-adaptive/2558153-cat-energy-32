@@ -1,6 +1,6 @@
 .item-card {
   position: relative;
-  padding-bottom: 24px;
+  padding-bottom: 25px;
   border-bottom: 1px solid #ededed;
 
   @media (min-width: 768px) {
@@ -9,17 +9,17 @@
     margin-bottom: 140px;
     padding-left: 0;
     padding-right: 0;
-    padding-bottom: 38px;
+    padding-bottom: 0;
     background-color: #f2f2f2;
     border: 0;
   }
 
   @media (min-width: 1300px) {
     margin-bottom: 142px;
-    padding-bottom: 40px;
+    padding-bottom: 0;
     width: 245px;
-    margin-left: 20px;
-    margin-right: 20px;
+    //margin-left: 20px;
+    margin-right: 52px;
   }
 }
 
@@ -34,7 +34,7 @@
 
 .item-card__img-wrapper {
   position: relative;
-  height: 142px;
+  height: 143px;
 }
 
 .item-card__image {
@@ -45,14 +45,14 @@
   @media (min-width: 768px) {
     position: absolute;
     left: 50%;
-    bottom: 17px;
+    bottom: 9px;
     width: auto;
     height: auto;
     transform: translateX(-50%);
   }
 
-  @media (min-width: 768px) {
-    bottom: 15px;
+  @media (min-width: 1300px) {
+    bottom: 7px;
   }
 }
 
@@ -63,6 +63,10 @@
   @media (min-width: 768px) {
     padding-left: 38px;
     padding-right: 38px;
+  }
+
+  @media (min-width: 1300px) {
+    padding-top: 10px;
   }
 }
 
@@ -78,10 +82,14 @@
   margin: 0 0 14px;
 
   @media (min-width: 768px) {
-    width: auto;
-    margin: 0 0 19px;
+    margin: 0 auto 18px;
     font-size: 20px;
+    width: 75%;
     text-align: center;
+  }
+
+  @media (min-width: 1300px) {
+    margin-bottom: 24px;
   }
 }
 
@@ -109,4 +117,8 @@
   background-color: #68b738;
   border: 0;
   cursor: pointer;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
 }

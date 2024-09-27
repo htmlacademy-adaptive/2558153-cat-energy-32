@@ -10,10 +10,11 @@
     position: inherit;
     display: block;
     width: auto;
-    padding-top: 42px;
+    padding-top: 39px;
   }
 
   @media (min-width: 1300px) {
+    min-width: 547px;
     padding-top: 30px;
     background-color: transparent;
   }
@@ -61,7 +62,7 @@
     padding-bottom: 7px;
     padding-top: 0;
     margin-left: 18px;
-    margin-right: 17px;
+    margin-right: 12px;
     font-size: 18px;
     line-height: 25px;
   }

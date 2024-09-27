@@ -5,7 +5,7 @@
   @media (min-width: 768px) {
     padding-left: 30px;
     padding-right: 30px;
-    padding-top: 26px;
+    padding-top: 15px;
     border: 0;
   }
 
@@ -29,7 +29,9 @@
   }
 
   @media (min-width: 1300px) {
-    max-width: 1400px;
+    max-width: 1300px;
+    padding-top: 90px;
+    padding-left: 70px;
   }
 }
 
@@ -60,7 +62,7 @@
 }
 
 .main-catalog__foot {
-  min-height: 210px;
+  min-height: 178px;
   padding-top: 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
@@ -68,16 +70,16 @@
     display: flex;
     flex-direction: column;
     //width: 324px;
-    padding: 84px 76px 36px;
+    padding: 48px 76px 36px;
     margin-bottom: 140px;
     border: 1px solid #cdcdcd;
     background-color: transparent;
   }
 
   @media (min-width: 1300px) {
-    padding: 84px 36px 36px;
-    margin-left: 20px;
-    margin-right: 20px;
+    padding: 48px 35px 36px;
+    //margin-left: 20px;
+    margin-right: 56px;
   }
 }
 
@@ -96,7 +98,11 @@
     margin: 0 auto 26px;
     font-size: 20px;
     line-height: 20px;
-    padding: 80px 0 0;
+    padding: 115px 0 0;
+  }
+
+  @media (min-width: 1300px) {
+    padding: 105px 0 0;
   }
 }
 
@@ -120,7 +126,17 @@
   color: #444444;
 
   @media (min-width: 768px) {
-    margin-top: 65px;
+    margin-top: 83px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: -40px;
+  }
+
+  @media (min-width: 1300px) {
+    margin-top: 94px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
   }
 }
 
@@ -128,10 +144,11 @@
   background-image: url("../../icons/stack.svg#plus");
   background-size: 30px 30px;
   background-repeat: no-repeat;
-  background-position: center 0;
+  background-position: center -5px;
 
   @media (min-width: 768px) {
-    background-size: 50px 50px;
+    background-size: 60px 60px;
+    background-position: center 0;
   }
 }
 
